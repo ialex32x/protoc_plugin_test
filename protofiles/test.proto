@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+import "test_s.proto";
+
+package protos;  
+
+message DetailInfo {
+    float x = 1;
+    double y = 2;
+    uint32 z = 3;
+}
+
+message AnotherDetailInfo {
+    float x = 1;
+    double y = 2;
+    uint32 z = 3;
+}
+
+message Foo {
+    string account = 1;
+    string hash = 2;
+    DetailInfo detail = 3;
+    AnotherDetailInfo adetail = 4;
+}
+
+message Goo {
+    string text = 1;
+    LogLevel level = 2;
+    string stack = 3;
+}
